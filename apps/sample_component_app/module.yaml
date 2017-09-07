@@ -1,0 +1,9 @@
+id: module
+title: Sample Module
+version: 1
+
+questions:
+- id: sample_question
+  title: Sample Question
+  prompt: What is the name of your component?
+  type: text
