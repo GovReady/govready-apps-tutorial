@@ -1,8 +1,8 @@
 Compliance Apps for GovReady-Q: A Tutorial
 ==========================================
 
-Authoring with Docker
----------------------
+Authoring Compliance Apps with Dockerized GovReady-Q
+----------------------------------------------------
 
 The fastest way to get started creating compliance apps is to use GovReady-Q's Docker image.
 
