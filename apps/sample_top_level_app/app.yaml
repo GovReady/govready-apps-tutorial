@@ -1,0 +1,61 @@
+id: app
+title: Sample Top Level App
+type: project
+version: 0.5
+icon: app.png
+catalog:
+  category: Technology
+  vendor: GovReady
+  vendor_url: http://www.govready.com
+  status: Operational
+  version: 0.2
+  source_url: https://github.com/GovReady/govready-sample-apps/apps/sample_top_level_app
+  description:
+    short: |
+      This is an example tope level app for compliance app developers.
+    long: |
+      This app is intended to be used by developers of GovReady Compliance Apps to learn how to create a top level compliance app describing the architecture of an IT system.
+  recommended_for:
+  - key_short: Org
+    value: Small
+  - key_short: Tech
+    value: Sophisticated
+  - key_short: Role
+    value: developers
+introduction:
+  format: markdown
+  template: |
+    Welcome to the Sample Top Level App. If you have authoring tools enabled,
+    you will be able to edit modules.
+questions:
+  - id: system_description
+    title: System Description
+    type: module
+    protocol: govready.com/apps/compliance/2017/system-description
+    icon: system_description.png
+    group: About the System
+  - id: data_center
+    title: Data Center
+    type: module
+    protocol: govready.com/apps/compliance/2017/data-center
+    icon: data_center.png
+    group: System Components
+  - id: file_server
+    title: File Server
+    type: module
+    protocol: govready.com/apps/compliance/2017/file-server
+    icon: file_server.png
+    group: System Components
+  - id: poc_log_audits
+    title: Audit Person
+    type: module
+    protocol: govready.com/apps/compliance/2017/point-of-contact
+    icon: point_of_contact.png
+    app_overrides_name_and_icon: false
+    group: System Components
+  - id: nist_171_ssp
+    title: NIST SP 800-171 SSP
+    type: module
+    module-id: nist_171_ssp
+    icon: ssp.png
+    group: System Security Plan

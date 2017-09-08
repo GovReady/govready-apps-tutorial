@@ -9,10 +9,10 @@ catalog:
   vendor_url: http://www.govready.com
   status: Operational
   version: 0.2
-  source_url: https://github.com/GovReady/govready-sample-apps/sample_component_app
+  source_url: https://github.com/GovReady/govready-sample-apps/apps/sample_component_app
   description:
     short: |
-      This is an example component app for app developers.
+      This is an example component app for compliance app developers.
     long: |
       This app is intended to be used by developers of GovReady Compliance Apps to learn how to create a compliance app.
   recommended_for:
@@ -21,7 +21,7 @@ catalog:
   - key_short: Tech
     value: Sophisticated
   - key_short: Role
-    value: PM
+    value: developers
 introduction:
   format: markdown
   template: |
