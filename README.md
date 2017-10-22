@@ -10,12 +10,13 @@ First, clone this repository to get the tutorial's sample apps:
 
 	git clone https://github.com/GovReady/govready-apps-tutorial
 
-Then start the GovReady-Q Docker image using a "bind mount" to make the sample apps on your computer available to the Docker container:
+Then start the GovReady-Q Docker image using a "bind mount" to make the sample apps on your computer available to the Docker container. Set `APPSPATH` to the absolute path to your `../govready-apps-tutorial/apps` directory.   
 
-	CONTAINER=$(docker container run \
-	--detach -p 8000:8000 \
-	--mount type=bind,src=/absolute/path/to/govready-apps-tutorial/apps,dst=/mnt/apps \
-	govready/govready-q)
+	# Set path to repo
+	APPSPATH=/absolute/path/to/govready-apps-tutorial/apps
+	
+	# Start GovReady-Q Docker image
+	CONTAINER=$(docker container run --detach -p 8000:8000 --mount type=bind,src=$APPSPATH,dst=/mnt/apps govready/govready-q)
 
 Create a Django database superuser and set up your first organization:
 
